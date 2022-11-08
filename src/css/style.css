@@ -1,8 +1,8 @@
 *{
-    border: transparent;
+    
     color: rgb(255, 255, 255);
-    background: none;
-    background-color:transparent;
+    
+    
 }
 
 body{
@@ -15,42 +15,62 @@ body{
     background-size: cover;
 }
 header{
+    margin: 0;
     font-size: 50px;
     color: white;
 }
 main{
+    margin-top: 5vw;
     display: flex;
-    border-color: unset;
+    align-items: center;
     justify-content: space-between;
+    
+    height: 31vw;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    
-   
+    align-items: center;
+    padding: 0;
 }
-.main-char-container{
-    display: flex;
-    width: 650px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 .selected-char {
-    width: 250px;
-    height: 450px;
+    width: 20vw;
+    height: 35vw;
     border:0;
     background-position: center;
     background-size: cover;
 }
+
+.main-char-container{
+    background-color: rgba(128, 128, 128, 0.632);
+    display: flex;
+    width: 47vw;
+    height: 31vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    border: solid 4px gray;
+}
+
+
+
 .char{
-    width: 200px;
-    height: 200px;
+    border: solid 3px gray;
+    
+    width: 15vw;
+    height: 15vw;
     background-position: center;
     background-size: cover;
 }
+
+.char:hover{
+    background-color: rgba(26, 74, 22, 0.64);
+    border: solid 3px rgba(26, 74, 22, 0.64);
+    box-shadow: 0px 0px 28px 0px rgb(31, 176, 41);
+}
+
 .char0{
     background-image: url('../img/image0.png');
     outline: none;
@@ -67,10 +87,24 @@ main{
 }
 .char4{
     background-image: url('../img/image4.png');
+    /* border: none; */
+    border-radius: 50%;
 }
+.char4:hover {
+    border: solid 3px gray;
+    
+    box-shadow: none;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.char4.is-animating{
+    animation: spinning 5s linear infinite;
+}
+
 .char5{
     background-image: url('../img/image5.png');
 }
+
 
 .selected-player2{
     background-image: url('../img/image1.gif');
@@ -80,4 +114,12 @@ main{
 }
 body {
     background-image: url('../img/img_background_0.gif');
+}
+@keyframes spinning {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
