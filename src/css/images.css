@@ -1,0 +1,24 @@
+.char0{
+    background-image: url('../img/image0.png');
+}
+.char1{
+    background-image: url('../img/image1.png');
+}
+.char2{
+    background-image: url('../img/image2.png');
+}
+.char3{
+    background-image: url('../img/image3.png');
+}
+.char4{
+    background-image: url('../img/image4.png');
+}
+.char5{
+    background-image: url('../img/image5.png');
+}
+.selected-player1{
+    background-image: url('../img/image0.gif');
+}
+.selected-player2{
+    background-image: url('../img/image1.gif');
+}
