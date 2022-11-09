@@ -1,8 +1,7 @@
+
 *{
-    
     color: rgb(255, 255, 255);
-    
-    
+    font: 'mk1.ttf','arial';
 }
 
 body{
@@ -13,19 +12,31 @@ body{
     align-items: center;
     background-position: center;
     background-size: cover;
+    background-image: url('../img/img_background_0.gif');
 }
+
 header{
     margin: 0;
     font-size: 50px;
     color: white;
 }
+
 main{
     margin-top: 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     height: 31vw;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+img{
+    width: 15vw;
+    height: 15vw;
 }
 
 .container {
@@ -39,82 +50,64 @@ main{
     width: 20vw;
     height: 35vw;
     border:0;
-    background-position: center;
-    background-size: cover;
+   
 }
 
 .main-char-container{
-    background-color: rgba(128, 128, 128, 0.632);
+    background-color: rgba(128, 128, 128, 0.8);
     display: flex;
-    width: 47vw;
+    width: 48vw;
     height: 31vw;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0;
-    border: solid 4px gray;
+    border: solid 4px rgba(128, 128, 128, 0.8);
 }
 
 
 
 .char{
-    border: solid 3px gray;
-    
+    border: solid 5px rgba(128, 128, 128, 0.435);
+    background-color: rgba(128, 128, 128, 0);
     width: 15vw;
     height: 15vw;
-    background-position: center;
-    background-size: cover;
+    cursor: pointer;
 }
 
 .char:hover{
     background-color: rgba(26, 74, 22, 0.64);
-    border: solid 3px rgba(26, 74, 22, 0.64);
+    border: solid 5px rgba(26, 74, 22, 0.64);
     box-shadow: 0px 0px 28px 0px rgb(31, 176, 41);
 }
 
-.char0{
-    background-image: url('../img/image0.png');
-    outline: none;
-    
-}
-.char1{
-    background-image: url('../img/image1.png');
-}
-.char2{
-    background-image: url('../img/image2.png');
-}
-.char3{
-    background-image: url('../img/image3.png');
-}
-.char4{
-    background-image: url('../img/image4.png');
-    /* border: none; */
-    border-radius: 50%;
-}
-.char4:hover {
-    border: solid 3px gray;
+
+.logo:hover {
+    border: solid 5px rgba(128, 128, 128, 0.435);
     
     box-shadow: none;
     background-color: rgba(128, 128, 128, 0);
+    cursor: auto;
 }
 
-.char4.is-animating{
+.spinning_logo.animated{
     animation: spinning 5s linear infinite;
 }
 
-.char5{
-    background-image: url('../img/image5.png');
-}
-
-
 .selected-player2{
-    background-image: url('../img/image1.gif');
+    width: 20vw;
+    height: 35vw;
 }
+
 .selected-player1{
-    background-image: url('../img/image0.gif');
+    width: 20vw;
+    height: 35vw;
 }
-body {
-    background-image: url('../img/img_background_0.gif');
+
+footer{
+    font-size: 20px;
+    margin-top: 2vw;
 }
+
 @keyframes spinning {
     0%{
         transform: rotate(0);
