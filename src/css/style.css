@@ -29,10 +29,7 @@ main{
     height: 31vw;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-}
+
 
 img{
     width: 15vw;
@@ -56,12 +53,11 @@ img{
 .main-char-container{
     background-color: rgba(128, 128, 128, 0.8);
     display: flex;
-    width: 48vw;
-    height: 31vw;
+    
     justify-content: center;
     flex-wrap: wrap;
     gap: 0;
-    border: solid 4px rgba(128, 128, 128, 0.8);
+    
 }
 
 

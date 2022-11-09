@@ -7,65 +7,47 @@
     <title>Mortal Kombat Selection</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/images.css">
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>Escolha seu personagem:</header>
     <main>
         <section class="player1-section container">
             <h1>Player 1</h1>
-            <div  class="selected-char">
+            <div  id="selected_1" class="selected-char">
                 <img class="selected-player1" src="./img/image0.gif" alt="">
             </div>
-            <h2></h2>
+            <h2 id="nameCharacter"></h2>
         </section>
-<!-- OBS: Tentar como tabela! deve ficar melhor -->
 
-        <section class="main-char-container">
-            <table>
+
+        <section >
+            <table class="main-char-container">
                 <tr>
-                    <td class="char char0">
+                    <td class="char char0" onclick="selectchar(0)">
                         <img src="./img/image0.png" >
                     </td>
-                    <td class="char char1">
-
+                    <td class="char char1" onclick="selectchar(1)">
+                        <img src="./img/image1.png" >
                     </td>
-                    <td>
-
+                    <td class="char char2" onclick="selectchar(2)">
+                        <img src="./img/image2.png" >
                     </td>
-
                 </tr>
                  <tr>
-                    <td>
-
+                    <td class="char char3" onclick="selectchar(3)">
+                        <img src="./img/image3.png" >
                     </td>
-                    <td>
-
+                    <td class="char logo" >
+                        <img class="spinning_logo animated" src="./img/logo.png" alt="">
                     </td>
-                    <td>
-
+                    <td class="char char4" onclick="selectchar(4)">
+                        <img src="./img/image4.png" >
                     </td>
 
                 </tr>
             </table>
-            <li >
-                
-            </li>
-            <li >
-                <img src="./img/image1.png" >
-            </li>
-            <li class="char char2">
-                <img src="./img/image2.png" >
-            </li>
-            <li class="char char3">
-                <img src="./img/image3.png" >
-            </li>
-            <li class="char logo ">
-                <img class="spinning_logo animated" src="./img/logo.png" alt="">
-            </li>
-            <li class="char char4">
-                <img src="./img/image4.png" >
-            </li>
+            
         </section>
         <section class="player2-section container">
             <h1>Player 2</h1>
