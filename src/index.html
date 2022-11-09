@@ -10,51 +10,56 @@
     <script defer src="./js/script.js"></script>
 </head>
 <body>
+    
     <header>Escolha seu personagem:</header>
     <main>
         <section class="player1-section container">
             <h1>Player 1</h1>
             <div  id="selected_1" class="selected-char">
-                <img class="selected-player1" src="./img/image0.gif" alt="">
+                <!-- <img class="selected-player1" src="" alt=""> -->
             </div>
             <h2 id="nameCharacter"></h2>
+            <div id="sound"></div>
         </section>
-
-
         <section >
             <table class="main-char-container">
                 <tr>
                     <td class="char char0" onclick="selectchar(0)">
+                        
                         <img src="./img/image0.png" >
                     </td>
                     <td class="char char1" onclick="selectchar(1)">
+                        
                         <img src="./img/image1.png" >
                     </td>
                     <td class="char char2" onclick="selectchar(2)">
+                        
                         <img src="./img/image2.png" >
                     </td>
                 </tr>
                  <tr>
                     <td class="char char3" onclick="selectchar(3)">
+                        
                         <img src="./img/image3.png" >
                     </td>
-                    <td class="char logo" >
+                    <!-- <audio src="./audio/mktheme.mp3" controls muted></audio> -->
+                    <td class="char logo" onclick="soundEffect()" >
+                        <div id="mortalKombat"></div>
                         <img class="spinning_logo animated" src="./img/logo.png" alt="">
                     </td>
                     <td class="char char4" onclick="selectchar(4)">
+                        
                         <img src="./img/image4.png" >
                     </td>
-
                 </tr>
             </table>
-            
         </section>
         <section class="player2-section container">
             <h1>Player 2</h1>
             <div class=" selected-char">
                 <img class="selected-player2" src="./img/image1.gif" alt="">
             </div>
-            <h2></h2>
+            <h2> Liu Kang</h2>
         </section>
     </main>
     <footer>&copy; Createde By: LeonardoCruz</footer>
